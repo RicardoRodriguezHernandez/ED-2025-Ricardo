@@ -1,0 +1,14 @@
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Programa que determine si un número es primo\Programa que determine si un número es primo\bin\Debug\net6.0\Programa que determine si un número es primo.exe
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Programa que determine si un número es primo\Programa que determine si un número es primo\bin\Debug\net6.0\Programa que determine si un número es primo.deps.json
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Programa que determine si un número es primo\Programa que determine si un número es primo\bin\Debug\net6.0\Programa que determine si un número es primo.runtimeconfig.json
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Programa que determine si un número es primo\Programa que determine si un número es primo\bin\Debug\net6.0\Programa que determine si un número es primo.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Programa que determine si un número es primo\Programa que determine si un número es primo\bin\Debug\net6.0\Programa que determine si un número es primo.pdb
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Programa que determine si un número es primo\Programa que determine si un número es primo\obj\Debug\net6.0\Programa que determine si un número es primo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Programa que determine si un número es primo\Programa que determine si un número es primo\obj\Debug\net6.0\Programa que determine si un número es primo.AssemblyInfoInputs.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Programa que determine si un número es primo\Programa que determine si un número es primo\obj\Debug\net6.0\Programa que determine si un número es primo.AssemblyInfo.cs
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Programa que determine si un número es primo\Programa que determine si un número es primo\obj\Debug\net6.0\Programa que determine si un número es primo.csproj.CoreCompileInputs.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Programa que determine si un número es primo\Programa que determine si un número es primo\obj\Debug\net6.0\Programa que determine si un número es primo.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Programa que determine si un número es primo\Programa que determine si un número es primo\obj\Debug\net6.0\refint\Programa que determine si un número es primo.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Programa que determine si un número es primo\Programa que determine si un número es primo\obj\Debug\net6.0\Programa que determine si un número es primo.pdb
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Programa que determine si un número es primo\Programa que determine si un número es primo\obj\Debug\net6.0\Programa que determine si un número es primo.genruntimeconfig.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Programa que determine si un número es primo\Programa que determine si un número es primo\obj\Debug\net6.0\ref\Programa que determine si un número es primo.dll
