@@ -1,0 +1,14 @@
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Calcular_area_de_un_circulo\Calcular_area_de_un_circulo\bin\Debug\net6.0\Calcular_area_de_un_circulo.exe
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Calcular_area_de_un_circulo\Calcular_area_de_un_circulo\bin\Debug\net6.0\Calcular_area_de_un_circulo.deps.json
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Calcular_area_de_un_circulo\Calcular_area_de_un_circulo\bin\Debug\net6.0\Calcular_area_de_un_circulo.runtimeconfig.json
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Calcular_area_de_un_circulo\Calcular_area_de_un_circulo\bin\Debug\net6.0\Calcular_area_de_un_circulo.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Calcular_area_de_un_circulo\Calcular_area_de_un_circulo\bin\Debug\net6.0\Calcular_area_de_un_circulo.pdb
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Calcular_area_de_un_circulo\Calcular_area_de_un_circulo\obj\Debug\net6.0\Calcular_area_de_un_circulo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Calcular_area_de_un_circulo\Calcular_area_de_un_circulo\obj\Debug\net6.0\Calcular_area_de_un_circulo.AssemblyInfoInputs.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Calcular_area_de_un_circulo\Calcular_area_de_un_circulo\obj\Debug\net6.0\Calcular_area_de_un_circulo.AssemblyInfo.cs
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Calcular_area_de_un_circulo\Calcular_area_de_un_circulo\obj\Debug\net6.0\Calcular_area_de_un_circulo.csproj.CoreCompileInputs.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Calcular_area_de_un_circulo\Calcular_area_de_un_circulo\obj\Debug\net6.0\Calcular_area_de_un_circulo.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Calcular_area_de_un_circulo\Calcular_area_de_un_circulo\obj\Debug\net6.0\refint\Calcular_area_de_un_circulo.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Calcular_area_de_un_circulo\Calcular_area_de_un_circulo\obj\Debug\net6.0\Calcular_area_de_un_circulo.pdb
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Calcular_area_de_un_circulo\Calcular_area_de_un_circulo\obj\Debug\net6.0\Calcular_area_de_un_circulo.genruntimeconfig.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Calcular_area_de_un_circulo\Calcular_area_de_un_circulo\obj\Debug\net6.0\ref\Calcular_area_de_un_circulo.dll
