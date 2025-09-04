@@ -1,0 +1,16 @@
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseLibro\ClaseLibro\bin\Debug\net6.0-windows\ClaseLibro.exe
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseLibro\ClaseLibro\bin\Debug\net6.0-windows\ClaseLibro.deps.json
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseLibro\ClaseLibro\bin\Debug\net6.0-windows\ClaseLibro.runtimeconfig.json
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseLibro\ClaseLibro\bin\Debug\net6.0-windows\ClaseLibro.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseLibro\ClaseLibro\bin\Debug\net6.0-windows\ClaseLibro.pdb
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseLibro\ClaseLibro\obj\Debug\net6.0-windows\ClaseLibro.Form1.resources
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseLibro\ClaseLibro\obj\Debug\net6.0-windows\ClaseLibro.csproj.GenerateResource.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseLibro\ClaseLibro\obj\Debug\net6.0-windows\ClaseLibro.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseLibro\ClaseLibro\obj\Debug\net6.0-windows\ClaseLibro.AssemblyInfoInputs.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseLibro\ClaseLibro\obj\Debug\net6.0-windows\ClaseLibro.AssemblyInfo.cs
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseLibro\ClaseLibro\obj\Debug\net6.0-windows\ClaseLibro.csproj.CoreCompileInputs.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseLibro\ClaseLibro\obj\Debug\net6.0-windows\ClaseLibro.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseLibro\ClaseLibro\obj\Debug\net6.0-windows\refint\ClaseLibro.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseLibro\ClaseLibro\obj\Debug\net6.0-windows\ClaseLibro.pdb
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseLibro\ClaseLibro\obj\Debug\net6.0-windows\ClaseLibro.genruntimeconfig.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseLibro\ClaseLibro\obj\Debug\net6.0-windows\ref\ClaseLibro.dll

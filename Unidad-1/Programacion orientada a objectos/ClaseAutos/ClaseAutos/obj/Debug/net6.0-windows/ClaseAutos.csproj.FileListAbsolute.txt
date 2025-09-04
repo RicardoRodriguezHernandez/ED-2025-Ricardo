@@ -1,0 +1,16 @@
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseAutos\ClaseAutos\bin\Debug\net6.0-windows\ClaseAutos.exe
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseAutos\ClaseAutos\bin\Debug\net6.0-windows\ClaseAutos.deps.json
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseAutos\ClaseAutos\bin\Debug\net6.0-windows\ClaseAutos.runtimeconfig.json
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseAutos\ClaseAutos\bin\Debug\net6.0-windows\ClaseAutos.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseAutos\ClaseAutos\bin\Debug\net6.0-windows\ClaseAutos.pdb
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseAutos\ClaseAutos\obj\Debug\net6.0-windows\ClaseAutos.Form1.resources
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseAutos\ClaseAutos\obj\Debug\net6.0-windows\ClaseAutos.csproj.GenerateResource.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseAutos\ClaseAutos\obj\Debug\net6.0-windows\ClaseAutos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseAutos\ClaseAutos\obj\Debug\net6.0-windows\ClaseAutos.AssemblyInfoInputs.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseAutos\ClaseAutos\obj\Debug\net6.0-windows\ClaseAutos.AssemblyInfo.cs
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseAutos\ClaseAutos\obj\Debug\net6.0-windows\ClaseAutos.csproj.CoreCompileInputs.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseAutos\ClaseAutos\obj\Debug\net6.0-windows\ClaseAutos.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseAutos\ClaseAutos\obj\Debug\net6.0-windows\refint\ClaseAutos.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseAutos\ClaseAutos\obj\Debug\net6.0-windows\ClaseAutos.pdb
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseAutos\ClaseAutos\obj\Debug\net6.0-windows\ClaseAutos.genruntimeconfig.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ClaseAutos\ClaseAutos\obj\Debug\net6.0-windows\ref\ClaseAutos.dll
