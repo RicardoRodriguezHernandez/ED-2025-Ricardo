@@ -1,0 +1,16 @@
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Lista_y_promedio\Lista_y_promedio\bin\Debug\net6.0-windows\Lista_y_promedio.exe
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Lista_y_promedio\Lista_y_promedio\bin\Debug\net6.0-windows\Lista_y_promedio.deps.json
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Lista_y_promedio\Lista_y_promedio\bin\Debug\net6.0-windows\Lista_y_promedio.runtimeconfig.json
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Lista_y_promedio\Lista_y_promedio\bin\Debug\net6.0-windows\Lista_y_promedio.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Lista_y_promedio\Lista_y_promedio\bin\Debug\net6.0-windows\Lista_y_promedio.pdb
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Lista_y_promedio\Lista_y_promedio\obj\Debug\net6.0-windows\Lista_y_promedio.Form1.resources
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Lista_y_promedio\Lista_y_promedio\obj\Debug\net6.0-windows\Lista_y_promedio.csproj.GenerateResource.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Lista_y_promedio\Lista_y_promedio\obj\Debug\net6.0-windows\Lista_y_promedio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Lista_y_promedio\Lista_y_promedio\obj\Debug\net6.0-windows\Lista_y_promedio.AssemblyInfoInputs.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Lista_y_promedio\Lista_y_promedio\obj\Debug\net6.0-windows\Lista_y_promedio.AssemblyInfo.cs
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Lista_y_promedio\Lista_y_promedio\obj\Debug\net6.0-windows\Lista_y_promedio.csproj.CoreCompileInputs.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Lista_y_promedio\Lista_y_promedio\obj\Debug\net6.0-windows\Lista_y_promedio.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Lista_y_promedio\Lista_y_promedio\obj\Debug\net6.0-windows\refint\Lista_y_promedio.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Lista_y_promedio\Lista_y_promedio\obj\Debug\net6.0-windows\Lista_y_promedio.pdb
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Lista_y_promedio\Lista_y_promedio\obj\Debug\net6.0-windows\Lista_y_promedio.genruntimeconfig.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Lista_y_promedio\Lista_y_promedio\obj\Debug\net6.0-windows\ref\Lista_y_promedio.dll
