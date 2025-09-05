@@ -1,0 +1,16 @@
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Biblioteca\Biblioteca\obj\Debug\net6.0-windows\Biblioteca.Form1.resources
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Biblioteca\Biblioteca\obj\Debug\net6.0-windows\Biblioteca.csproj.GenerateResource.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Biblioteca\Biblioteca\obj\Debug\net6.0-windows\Biblioteca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Biblioteca\Biblioteca\obj\Debug\net6.0-windows\Biblioteca.AssemblyInfoInputs.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Biblioteca\Biblioteca\obj\Debug\net6.0-windows\Biblioteca.AssemblyInfo.cs
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Biblioteca\Biblioteca\obj\Debug\net6.0-windows\Biblioteca.csproj.CoreCompileInputs.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Biblioteca\Biblioteca\bin\Debug\net6.0-windows\Biblioteca.exe
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Biblioteca\Biblioteca\bin\Debug\net6.0-windows\Biblioteca.deps.json
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Biblioteca\Biblioteca\bin\Debug\net6.0-windows\Biblioteca.runtimeconfig.json
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Biblioteca\Biblioteca\bin\Debug\net6.0-windows\Biblioteca.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Biblioteca\Biblioteca\bin\Debug\net6.0-windows\Biblioteca.pdb
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Biblioteca\Biblioteca\obj\Debug\net6.0-windows\Biblioteca.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Biblioteca\Biblioteca\obj\Debug\net6.0-windows\refint\Biblioteca.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Biblioteca\Biblioteca\obj\Debug\net6.0-windows\Biblioteca.pdb
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Biblioteca\Biblioteca\obj\Debug\net6.0-windows\Biblioteca.genruntimeconfig.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\Biblioteca\Biblioteca\obj\Debug\net6.0-windows\ref\Biblioteca.dll
