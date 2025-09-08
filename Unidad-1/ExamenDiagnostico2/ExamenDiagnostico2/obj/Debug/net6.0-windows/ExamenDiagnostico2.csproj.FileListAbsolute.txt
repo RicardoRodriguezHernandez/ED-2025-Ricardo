@@ -1,0 +1,16 @@
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ExamenDiagnostico2\ExamenDiagnostico2\bin\Debug\net6.0-windows\ExamenDiagnostico2.exe
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ExamenDiagnostico2\ExamenDiagnostico2\bin\Debug\net6.0-windows\ExamenDiagnostico2.deps.json
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ExamenDiagnostico2\ExamenDiagnostico2\bin\Debug\net6.0-windows\ExamenDiagnostico2.runtimeconfig.json
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ExamenDiagnostico2\ExamenDiagnostico2\bin\Debug\net6.0-windows\ExamenDiagnostico2.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ExamenDiagnostico2\ExamenDiagnostico2\bin\Debug\net6.0-windows\ExamenDiagnostico2.pdb
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ExamenDiagnostico2\ExamenDiagnostico2\obj\Debug\net6.0-windows\ExamenDiagnostico2.Form1.resources
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ExamenDiagnostico2\ExamenDiagnostico2\obj\Debug\net6.0-windows\ExamenDiagnostico2.csproj.GenerateResource.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ExamenDiagnostico2\ExamenDiagnostico2\obj\Debug\net6.0-windows\ExamenDiagnostico2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ExamenDiagnostico2\ExamenDiagnostico2\obj\Debug\net6.0-windows\ExamenDiagnostico2.AssemblyInfoInputs.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ExamenDiagnostico2\ExamenDiagnostico2\obj\Debug\net6.0-windows\ExamenDiagnostico2.AssemblyInfo.cs
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ExamenDiagnostico2\ExamenDiagnostico2\obj\Debug\net6.0-windows\ExamenDiagnostico2.csproj.CoreCompileInputs.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ExamenDiagnostico2\ExamenDiagnostico2\obj\Debug\net6.0-windows\ExamenDiagnostico2.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ExamenDiagnostico2\ExamenDiagnostico2\obj\Debug\net6.0-windows\refint\ExamenDiagnostico2.dll
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ExamenDiagnostico2\ExamenDiagnostico2\obj\Debug\net6.0-windows\ExamenDiagnostico2.pdb
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ExamenDiagnostico2\ExamenDiagnostico2\obj\Debug\net6.0-windows\ExamenDiagnostico2.genruntimeconfig.cache
+C:\Users\lalom\OneDrive\Escritorio\Unidad-1\ExamenDiagnostico2\ExamenDiagnostico2\obj\Debug\net6.0-windows\ref\ExamenDiagnostico2.dll
