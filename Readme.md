@@ -1,2 +1,0 @@
-El mencho 
-El pwp
