@@ -1,0 +1,780 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN8uWYx7xcMIjcAOXghew32",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/RicardoRodriguezHernandez/ED-2025-Ricardo/blob/main/Algoritmos%20Eficientes%20vs%20Ineficientes\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Comparación de Búsquedas (Lineal vs Binaria)"
+      ],
+      "metadata": {
+        "id": "_ncA-gXRFDJf"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YD7_MD2N9Bg8",
+        "outputId": "dce062d6-58b8-40f9-95fb-ed3bf499857f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "--- Tamaño de lista: 1000 ---\n",
+            "Número 415 encontrado en posición 415\n",
+            "Número 991 encontrado en posición 991\n",
+            "Número 328 encontrado en posición 328\n",
+            "Número 961 encontrado en posición 961\n",
+            "Número 74 encontrado en posición 74\n",
+            "Número 1001 NO encontrado\n",
+            "Número 1002 NO encontrado\n",
+            "Número 1003 NO encontrado\n",
+            "Número 1004 NO encontrado\n",
+            "Número 1005 NO encontrado\n",
+            "Tiempo promedio de busqueda: 0.00007095 segundos\n",
+            "\n",
+            "\n",
+            "--- Tamaño de lista: 10000 ---\n",
+            "Número 1910 encontrado en posición 1910\n",
+            "Número 324 encontrado en posición 324\n",
+            "Número 1178 encontrado en posición 1178\n",
+            "Número 2495 encontrado en posición 2495\n",
+            "Número 4380 encontrado en posición 4380\n",
+            "Número 10001 NO encontrado\n",
+            "Número 10002 NO encontrado\n",
+            "Número 10003 NO encontrado\n",
+            "Número 10004 NO encontrado\n",
+            "Número 10005 NO encontrado\n",
+            "Tiempo promedio de busqueda: 0.00043144 segundos\n",
+            "\n",
+            "\n",
+            "--- Tamaño de lista: 50000 ---\n",
+            "Número 33753 encontrado en posición 33753\n",
+            "Número 22945 encontrado en posición 22945\n",
+            "Número 14382 encontrado en posición 14382\n",
+            "Número 3449 encontrado en posición 3449\n",
+            "Número 5269 encontrado en posición 5269\n",
+            "Número 50001 NO encontrado\n",
+            "Número 50002 NO encontrado\n",
+            "Número 50003 NO encontrado\n",
+            "Número 50004 NO encontrado\n",
+            "Número 50005 NO encontrado\n",
+            "Tiempo promedio de busqueda: 0.00229719 segundos\n",
+            "\n",
+            "\n",
+            "--- Tamaño de lista: 100000 ---\n",
+            "Número 73798 encontrado en posición 73798\n",
+            "Número 76682 encontrado en posición 76682\n",
+            "Número 52131 encontrado en posición 52131\n",
+            "Número 38857 encontrado en posición 38857\n",
+            "Número 18169 encontrado en posición 18169\n",
+            "Número 100001 NO encontrado\n",
+            "Número 100002 NO encontrado\n",
+            "Número 100003 NO encontrado\n",
+            "Número 100004 NO encontrado\n",
+            "Número 100005 NO encontrado\n",
+            "Tiempo promedio de busqueda: 0.00366151 segundos\n",
+            "\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Busqueda en Lista Ordenada\n",
+        "#Lineal\n",
+        "\n",
+        "import time\n",
+        "import random\n",
+        "\n",
+        "def busqueda_lineal(lista, objetivo):\n",
+        "    for i in range(len(lista)):\n",
+        "        if lista[i] == objetivo:\n",
+        "            return i\n",
+        "    return -1\n",
+        "\n",
+        "if __name__ == \"__main__\":\n",
+        "    tamanos = [1000, 10000, 50000, 100000]\n",
+        "    num_pruebas = 10  # 5 existentes + 5 no existentes\n",
+        "\n",
+        "for n in tamanos:\n",
+        "    # 1. Generar lista ordenada\n",
+        "    lista = list(range(n))  # lista ordenada de 0 a n-1\n",
+        "\n",
+        "    # 2. Elegir elementos para buscar\n",
+        "    existentes = random.sample(lista, 5)     # 5 que sí existen\n",
+        "    no_existentes = [n + i for i in range(1, 6)]  # 5 que no existen\n",
+        "    pruebas = existentes + no_existentes\n",
+        "\n",
+        "    # 3. Medir tiempo promedio\n",
+        "    tiempos = []\n",
+        "    print(f\"\\n--- Tamaño de lista: {n} ---\")\n",
+        "    for objetivo in pruebas:\n",
+        "        inicio = time.time()\n",
+        "        resultado = busqueda_lineal(lista, objetivo)\n",
+        "        fin = time.time()\n",
+        "        tiempos.append(fin - inicio)\n",
+        "\n",
+        "        # Imprimir numeros existentes y no existentes\n",
+        "        if resultado != -1:\n",
+        "            print(f\"Número {objetivo} encontrado en posición {resultado}\")\n",
+        "        else:\n",
+        "            print(f\"Número {objetivo} NO encontrado\")\n",
+        "\n",
+        "    tiempo_promedio = sum(tiempos) / num_pruebas\n",
+        "    print(f\"Tiempo promedio de busqueda: {tiempo_promedio:.8f} segundos\\n\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "Tm3WVEJRGVn5"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 17,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "923836db-a413-4b5b-9d5c-dc3758ffba04",
+        "id": "diBn8yLiGWQ4"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "--- Tamaño de lista: 1000 ---\n",
+            "Número 337 encontrado en posición 337\n",
+            "Número 311 encontrado en posición 311\n",
+            "Número 658 encontrado en posición 658\n",
+            "Número 925 encontrado en posición 925\n",
+            "Número 742 encontrado en posición 742\n",
+            "Número 1001 NO encontrado\n",
+            "Número 1002 NO encontrado\n",
+            "Número 1003 NO encontrado\n",
+            "Número 1004 NO encontrado\n",
+            "Número 1005 NO encontrado\n",
+            "Tiempo promedio de busqueda: 0.00003176 segundos\n",
+            "\n",
+            "\n",
+            "--- Tamaño de lista: 10000 ---\n",
+            "Número 4287 encontrado en posición 4287\n",
+            "Número 9982 encontrado en posición 9982\n",
+            "Número 1120 encontrado en posición 1120\n",
+            "Número 9697 encontrado en posición 9697\n",
+            "Número 3748 encontrado en posición 3748\n",
+            "Número 10001 NO encontrado\n",
+            "Número 10002 NO encontrado\n",
+            "Número 10003 NO encontrado\n",
+            "Número 10004 NO encontrado\n",
+            "Número 10005 NO encontrado\n",
+            "Tiempo promedio de busqueda: 0.00050752 segundos\n",
+            "\n",
+            "\n",
+            "--- Tamaño de lista: 50000 ---\n",
+            "Número 4146 encontrado en posición 4146\n",
+            "Número 33295 encontrado en posición 33295\n",
+            "Número 4891 encontrado en posición 4891\n",
+            "Número 17218 encontrado en posición 17218\n",
+            "Número 24189 encontrado en posición 24189\n",
+            "Número 50001 NO encontrado\n",
+            "Número 50002 NO encontrado\n",
+            "Número 50003 NO encontrado\n",
+            "Número 50004 NO encontrado\n",
+            "Número 50005 NO encontrado\n",
+            "Tiempo promedio de busqueda: 0.00159929 segundos\n",
+            "\n",
+            "\n",
+            "--- Tamaño de lista: 100000 ---\n",
+            "Número 15803 encontrado en posición 15803\n",
+            "Número 80385 encontrado en posición 80385\n",
+            "Número 36747 encontrado en posición 36747\n",
+            "Número 46108 encontrado en posición 46108\n",
+            "Número 86472 encontrado en posición 86472\n",
+            "Número 100001 NO encontrado\n",
+            "Número 100002 NO encontrado\n",
+            "Número 100003 NO encontrado\n",
+            "Número 100004 NO encontrado\n",
+            "Número 100005 NO encontrado\n",
+            "Tiempo promedio de busqueda: 0.00371540 segundos\n",
+            "\n"
+          ]
+        }
+      ],
+      "source": [
+        "#Busqueda en Lista Ordenada\n",
+        "#Binaria\n",
+        "\n",
+        "import time\n",
+        "import random\n",
+        "\n",
+        "def busqueda_binaria(lista, objetivo):\n",
+        "    izquierda, derecha = 0, len(lista) - 1\n",
+        "    while izquierda <= derecha:\n",
+        "        medio = (izquierda + derecha) // 2\n",
+        "        if lista[medio] == objetivo:\n",
+        "            return medio\n",
+        "        elif lista[medio] < objetivo:\n",
+        "            izquierda = medio + 1\n",
+        "        else:\n",
+        "            derecha = medio - 1\n",
+        "    return -1\n",
+        "\n",
+        "if __name__ == \"__main__\":\n",
+        "    tamanos = [1000, 10000, 50000, 100000]\n",
+        "    num_pruebas = 10  # 5 existentes + 5 no existentes\n",
+        "\n",
+        "for n in tamanos:\n",
+        "    # 1. Generar lista ordenada\n",
+        "    lista = list(range(n))  # lista ordenada de 0 a n-1\n",
+        "\n",
+        "    # 2. Elegir elementos para buscar\n",
+        "    existentes = random.sample(lista, 5)     # 5 que sí existen\n",
+        "    no_existentes = [n + i for i in range(1, 6)]  # 5 que no existen\n",
+        "    pruebas = existentes + no_existentes\n",
+        "\n",
+        "    # 3. Medir tiempo promedio\n",
+        "    tiempos = []\n",
+        "    print(f\"\\n--- Tamaño de lista: {n} ---\")\n",
+        "    for objetivo in pruebas:\n",
+        "        inicio = time.time()\n",
+        "        resultado = busqueda_lineal(lista, objetivo)\n",
+        "        fin = time.time()\n",
+        "        tiempos.append(fin - inicio)\n",
+        "\n",
+        "        # Imprimir numeros existentes y no existentes\n",
+        "        if resultado != -1:\n",
+        "            print(f\"Número {objetivo} encontrado en posición {resultado}\")\n",
+        "        else:\n",
+        "            print(f\"Número {objetivo} NO encontrado\")\n",
+        "\n",
+        "    tiempo_promedio = sum(tiempos) / num_pruebas\n",
+        "    print(f\"Tiempo promedio de busqueda: {tiempo_promedio:.8f} segundos\\n\")"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Comparación de Ordenamientos (Bubble Sort vs Python sorted)"
+      ],
+      "metadata": {
+        "id": "2Iba39ZyIijl"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "2.1: Evaluación de Rendimiento"
+      ],
+      "metadata": {
+        "id": "o9o6r3PzIlI-"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "import time\n",
+        "\n",
+        "#Bubble sort 0 (n^2)-Ineficiente\n",
+        "def bubble_sort(lista):\n",
+        "    n = len(lista)\n",
+        "    for i in range(n):\n",
+        "        for j in range(0, n-i-1):\n",
+        "            if lista[j] > lista[j+1]:\n",
+        "                lista[j], lista[j+1] = lista[j+1], lista[j]\n",
+        "    return lista\n",
+        "\n",
+        "dimensiones_ordenamiento = [100, 500, 1000]\n",
+        "\n",
+        "for n in dimensiones_ordenamiento:\n",
+        "    # 1. Generar secuencia aleatoria de elementos únicos\n",
+        "    secuencia = random.sample(range(n*10), n)\n",
+        "\n",
+        "    # 3. Medir tiempo de ejecución completo\n",
+        "    copia_bubble = secuencia.copy()\n",
+        "    inicio = time.time()\n",
+        "    resultado_bubble = bubble_sort(copia_bubble)\n",
+        "    fin = time.time()\n",
+        "    tiempo_bubble = fin - inicio\n",
+        "\n",
+        "    # 4. Verificar ordenación\n",
+        "    correcto_bubble = resultado_bubble == sorted(secuencia)\n",
+        "\n",
+        "    print(f\"\\n--- Dimensión: {n} ---\")\n",
+        "    print(f\"Bubble Sort -> {tiempo_bubble:.6f}s | Correcto: {correcto_bubble}\")\n",
+        ""
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nkUCuNo4IlWT",
+        "outputId": "4e9de7c6-4ea5-492b-ff41-772885f16f75"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "--- Dimensión: 100 ---\n",
+            "Bubble Sort -> 0.001197s | Correcto: True\n",
+            "\n",
+            "--- Dimensión: 500 ---\n",
+            "Bubble Sort -> 0.014232s | Correcto: True\n",
+            "\n",
+            "--- Dimensión: 1000 ---\n",
+            "Bubble Sort -> 0.058626s | Correcto: True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "import time\n",
+        "\n",
+        "#Merge Sort 0(n log n)-Eficiente\n",
+        "def merge_sort(lista):\n",
+        "    if len(lista) <= 1:\n",
+        "        return lista\n",
+        "    medio = len(lista) // 2\n",
+        "    izquierda = merge_sort(lista[:medio])\n",
+        "    derecha = merge_sort(lista[medio:])\n",
+        "    return merge(izquierda, derecha)\n",
+        "\n",
+        "def merge (izquierda, derecha):\n",
+        "    resultado = []\n",
+        "    i = j = 0\n",
+        "\n",
+        "#Combina las dos listas ordenadas\n",
+        "    while i < len(izquierda) and j < len(derecha):\n",
+        "        if izquierda[i] < derecha[j]:\n",
+        "            resultado.append(izquierda[i])\n",
+        "            i += 1\n",
+        "        else:\n",
+        "            resultado.append(derecha[j])\n",
+        "            j += 1\n",
+        "            #Añade los elementos restantes\n",
+        "    resultado.extend(izquierda[i:])\n",
+        "    resultado.extend(derecha[j:])\n",
+        "    return resultado\n",
+        "    return lista\n",
+        "\n",
+        "dimensiones_ordenamiento = [100, 500, 1000]\n",
+        "\n",
+        "for n in dimensiones_ordenamiento:\n",
+        "    # 1. Generar secuencia aleatoria de elementos únicos\n",
+        "    secuencia = random.sample(range(n*10), n)\n",
+        "\n",
+        "    # 3. Medir tiempo de ejecución completo\n",
+        "    inicio = time.time()\n",
+        "    resultado_merge = merge_sort(secuencia.copy())\n",
+        "    fin = time.time()\n",
+        "    tiempo_merge = fin - inicio\n",
+        "\n",
+        "    # 4. Verificar ordenación\n",
+        "    correcto_merge = resultado_merge == sorted(secuencia)\n",
+        "\n",
+        "    print(f\"\\n--- Dimensión: {n} ---\")\n",
+        "    print(f\"Merge Sort -> {tiempo_merge:.6f}s | Correcto: {correcto_merge}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EsWDlpneMhTo",
+        "outputId": "7a0d5041-e6f9-4791-b900-28673d2f3b6b"
+      },
+      "execution_count": 28,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "--- Dimensión: 100 ---\n",
+            "Merge Sort -> 0.000081s | Correcto: False\n",
+            "\n",
+            "--- Dimensión: 500 ---\n",
+            "Merge Sort -> 0.000322s | Correcto: False\n",
+            "\n",
+            "--- Dimensión: 1000 ---\n",
+            "Merge Sort -> 0.000482s | Correcto: False\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Tabla 2.2 - Comportamiento en Casos Específicos (n=1000):"
+      ],
+      "metadata": {
+        "id": "4cpP9YJPUmMa"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "secuencia_ordenada = list(range(1000))\n",
+        "secuencia_inversa = list(range(1000, 0, -1))\n",
+        "secuencia_casi_ordenada = [x if x % 100 != 0 else x+500 for x in range(1000)]\n",
+        "\n",
+        "casos = {\n",
+        "    \"Ordenada\": secuencia_ordenada,\n",
+        "    \"Inversa\": secuencia_inversa,\n",
+        "    \"Casi ordenada\": secuencia_casi_ordenada\n",
+        "}\n",
+        "\n",
+        "for nombre, secuencia in casos.items():\n",
+        "    # Bubble Sort\n",
+        "    copia_bubble = secuencia.copy()\n",
+        "    inicio = time.time()\n",
+        "    resultado_bubble = bubble_sort(copia_bubble)\n",
+        "    fin = time.time()\n",
+        "    tiempo_bubble = fin - inicio\n",
+        "\n",
+        "    print(f\"\\n--- Caso: {nombre} ---\")\n",
+        "    print(f\"Bubble Sort -> {tiempo_bubble:.6f}s\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "V0EsxXa_U1fc",
+        "outputId": "3f9319d7-7a0d-47cd-a1c0-a71135464af4"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "--- Caso: Ordenada ---\n",
+            "Bubble Sort -> 0.034672s\n",
+            "\n",
+            "--- Caso: Inversa ---\n",
+            "Bubble Sort -> 0.064684s\n",
+            "\n",
+            "--- Caso: Casi ordenada ---\n",
+            "Bubble Sort -> 0.029197s\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "secuencia_ordenada = list(range(1000))\n",
+        "secuencia_inversa = list(range(1000, 0, -1))\n",
+        "secuencia_casi_ordenada = [x if x % 100 != 0 else x+500 for x in range(1000)]\n",
+        "\n",
+        "casos = {\n",
+        "    \"Ordenada\": secuencia_ordenada,\n",
+        "    \"Inversa\": secuencia_inversa,\n",
+        "    \"Casi ordenada\": secuencia_casi_ordenada\n",
+        "}\n",
+        "\n",
+        "for nombre, secuencia in casos.items():\n",
+        "    # Merge sort\n",
+        "    inicio = time.time()\n",
+        "    resultado_merge = merge_sort(secuencia.copy())\n",
+        "    fin = time.time()\n",
+        "    tiempo_merge = fin - inicio\n",
+        "\n",
+        "    correcto_merge = resultado_merge == sorted(secuencia)\n",
+        "\n",
+        "    print(f\"\\n--- Caso: {nombre} ---\")\n",
+        "    print(f\"Merge Sort -> {tiempo_merge:.6f}s\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "eyobw0ZkWJqA",
+        "outputId": "c0942a48-34a1-49b7-ecf7-a6d565b1f2c5"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "--- Caso: Ordenada ---\n",
+            "Merge Sort -> 0.000490s\n",
+            "\n",
+            "--- Caso: Inversa ---\n",
+            "Merge Sort -> 0.000442s\n",
+            "\n",
+            "--- Caso: Casi ordenada ---\n",
+            "Merge Sort -> 0.000688s\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Fibonacci Recursivo vs Iterativo"
+      ],
+      "metadata": {
+        "id": "h408ESD8YKoc"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "3.1 Tiempos de cálculo para valores pequeños"
+      ],
+      "metadata": {
+        "id": "L9DZc6ERYPCJ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Versión recursiva O(2^n) - muy ineficiente\n",
+        "def fib_recursivo(n):\n",
+        "    if n <= 1:\n",
+        "        return n\n",
+        "    return fib_recursivo(n-1) + fib_recursivo(n-2)\n",
+        "\n",
+        "\n",
+        "# Versión iterativa O(n)\n",
+        "def fib_iterativo(n):\n",
+        "    \"\"\"Implementación iterativa O(n)\"\"\"\n",
+        "    if n <= 1:\n",
+        "        return n\n",
+        "    a, b = 0, 1\n",
+        "    for _ in range(2, n+1):\n",
+        "        a, b = b, a + b\n",
+        "    return b\n",
+        "\n",
+        "\n",
+        "# Versión con memoization O(n)\n",
+        "def fib_memoization(n, memo=None):\n",
+        "    \"\"\"BONUS: Implementación con memoization O(n)\"\"\"\n",
+        "    if memo is None:\n",
+        "        memo = {}\n",
+        "    if n in memo:\n",
+        "        return memo[n]\n",
+        "    if n <= 1:\n",
+        "        memo[n] = n\n",
+        "    else:\n",
+        "        memo[n] = fib_memoization(n-1, memo) + fib_memoization(n-2, memo)\n",
+        "    return memo[n]\n",
+        "\n",
+        "import time\n",
+        "\n",
+        "valores_n = [5, 10, 20, 30, 35]\n",
+        "\n",
+        "for n in valores_n:\n",
+        "    # Medir tiempo versión recursiva\n",
+        "    inicio = time.time()\n",
+        "    resultado_rec = fib_recursivo(n)\n",
+        "    fin = time.time()\n",
+        "    tiempo_rec = fin - inicio\n",
+        "\n",
+        "    # Medir tiempo versión iterativa\n",
+        "    inicio = time.time()\n",
+        "    resultado_itr = fib_iterativo(n)\n",
+        "    fin = time.time()\n",
+        "    tiempo_itr = fin - inicio\n",
+        "\n",
+        "    # Medir tiempo versión memoization\n",
+        "    inicio = time.time()\n",
+        "    resultado_memo = fib_memoization(n)\n",
+        "    fin = time.time()\n",
+        "    tiempo_memo = fin - inicio\n",
+        "\n",
+        "    # Verificar que todos den el mismo resultado\n",
+        "    correcto = resultado_rec == resultado_itr == resultado_memo\n",
+        "\n",
+        "    print(f\"\\n--- n = {n} ---\")\n",
+        "    print(f\"Recursivo: {resultado_rec} | Tiempo: {tiempo_rec:.6f} s\")\n",
+        "    print(f\"Iterativo: {resultado_itr} | Tiempo: {tiempo_itr:.6f} s\")\n",
+        "    print(f\"Memoization: {resultado_memo} | Tiempo: {tiempo_memo:.6f} s\")\n",
+        "    print(f\"Todos correctos: {correcto}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kx9aF6lVaWZx",
+        "outputId": "367d8987-9877-45d3-8b3b-2754c5631811"
+      },
+      "execution_count": 37,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "--- n = 5 ---\n",
+            "Recursivo: 5 | Tiempo: 0.000007 s\n",
+            "Iterativo: 5 | Tiempo: 0.000005 s\n",
+            "Memoization: 5 | Tiempo: 0.000008 s\n",
+            "Todos correctos: True\n",
+            "\n",
+            "--- n = 10 ---\n",
+            "Recursivo: 55 | Tiempo: 0.000026 s\n",
+            "Iterativo: 55 | Tiempo: 0.000012 s\n",
+            "Memoization: 55 | Tiempo: 0.000009 s\n",
+            "Todos correctos: True\n",
+            "\n",
+            "--- n = 20 ---\n",
+            "Recursivo: 6765 | Tiempo: 0.002234 s\n",
+            "Iterativo: 6765 | Tiempo: 0.000009 s\n",
+            "Memoization: 6765 | Tiempo: 0.000018 s\n",
+            "Todos correctos: True\n",
+            "\n",
+            "--- n = 30 ---\n",
+            "Recursivo: 832040 | Tiempo: 0.170941 s\n",
+            "Iterativo: 832040 | Tiempo: 0.000009 s\n",
+            "Memoization: 832040 | Tiempo: 0.000024 s\n",
+            "Todos correctos: True\n",
+            "\n",
+            "--- n = 35 ---\n",
+            "Recursivo: 9227465 | Tiempo: 3.287438 s\n",
+            "Iterativo: 9227465 | Tiempo: 0.000024 s\n",
+            "Memoization: 9227465 | Tiempo: 0.000033 s\n",
+            "Todos correctos: True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Cersion iterativa 0(n)- eficiente\n",
+        "def fib_dinamico(n):\n",
+        "    if n <= 1:\n",
+        "        return n\n",
+        "    a, b = 0, 1\n",
+        "    for _ in range(2, n + 1):\n",
+        "        a, b = b, a + b\n",
+        "    return b\n",
+        "\n",
+        "import time\n",
+        "\n",
+        "valores_n = [5, 10, 20, 30, 35]\n",
+        "\n",
+        "for n in valores_n:\n",
+        "    # Medir tiempo versión recursiva\n",
+        "    inicio = time.time()\n",
+        "    resultado_rec = fib_recursivo(n)\n",
+        "    fin = time.time()\n",
+        "    tiempo_rec = fin - inicio\n",
+        "\n",
+        "    # Medir tiempo versión iterativa\n",
+        "    inicio = time.time()\n",
+        "    resultado_itr = fib_iterativo(n)\n",
+        "    fin = time.time()\n",
+        "    tiempo_itr = fin - inicio\n",
+        "\n",
+        "    # Medir tiempo versión memoization\n",
+        "    inicio = time.time()\n",
+        "    resultado_memo = fib_memoization(n)\n",
+        "    fin = time.time()\n",
+        "    tiempo_memo = fin - inicio\n",
+        "\n",
+        "    # Verificar que todos den el mismo resultado\n",
+        "    correcto = resultado_rec == resultado_itr == resultado_memo\n",
+        "\n",
+        "    print(f\"\\n--- n = {n} ---\")\n",
+        "    print(f\"Recursivo: {resultado_rec} | Tiempo: {tiempo_rec:.6f} s\")\n",
+        "    print(f\"Iterativo: {resultado_itr} | Tiempo: {tiempo_itr:.6f} s\")\n",
+        "    print(f\"Memoization: {resultado_memo} | Tiempo: {tiempo_memo:.6f} s\")\n",
+        "    print(f\"Todos correctos: {correcto}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bNKl-NBhbGWB",
+        "outputId": "9a73e4cd-bc8b-4d6b-ecb3-90b71f6c97b9"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "--- n = 5 ---\n",
+            "Recursivo: 5 | Tiempo: 0.000004 s\n",
+            "Iterativo: 5 | Tiempo: 0.000003 s\n",
+            "Memoization: 5 | Tiempo: 0.000005 s\n",
+            "Todos correctos: True\n",
+            "\n",
+            "--- n = 10 ---\n",
+            "Recursivo: 55 | Tiempo: 0.000020 s\n",
+            "Iterativo: 55 | Tiempo: 0.000003 s\n",
+            "Memoization: 55 | Tiempo: 0.000006 s\n",
+            "Todos correctos: True\n",
+            "\n",
+            "--- n = 20 ---\n",
+            "Recursivo: 6765 | Tiempo: 0.001602 s\n",
+            "Iterativo: 6765 | Tiempo: 0.000004 s\n",
+            "Memoization: 6765 | Tiempo: 0.000010 s\n",
+            "Todos correctos: True\n",
+            "\n",
+            "--- n = 30 ---\n",
+            "Recursivo: 832040 | Tiempo: 0.167348 s\n",
+            "Iterativo: 832040 | Tiempo: 0.000009 s\n",
+            "Memoization: 832040 | Tiempo: 0.000025 s\n",
+            "Todos correctos: True\n",
+            "\n",
+            "--- n = 35 ---\n",
+            "Recursivo: 9227465 | Tiempo: 1.909888 s\n",
+            "Iterativo: 9227465 | Tiempo: 0.000009 s\n",
+            "Memoization: 9227465 | Tiempo: 0.000032 s\n",
+            "Todos correctos: True\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
