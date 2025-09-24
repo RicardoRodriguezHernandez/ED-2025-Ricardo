@@ -1,0 +1,392 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/RicardoRodriguezHernandez/ED-2025-Ricardo/blob/main/Algoritmos%20Eficientes%20vs%20Ineficientes\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Estructuras Lineales - Listas, Pilas y Colas"
+      ],
+      "metadata": {
+        "id": "U5yA2Y4RWTrT"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "T1KBEHnHWOa4",
+        "outputId": "2b605dfd-8b23-41f1-ac92-71ef23f3ff2b"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "contiene 7? True\n",
+            "[1, 2, 3, 4, 6, 7, 8, 9, 10, 20]\n"
+          ]
+        }
+      ],
+      "source": [
+        "lista = [1,2,3,4,5,6,7,8,9,10]\n",
+        "lista.append(20)\n",
+        "lista.remove(5)\n",
+        "print('contiene 7?', 7 in lista)\n",
+        "print(lista)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Ejemplo - Lista de palabras"
+      ],
+      "metadata": {
+        "id": "Rl0BhA0iXpPk"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "dHontmWsAAx1"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "palabras = []\n",
+        "while True:\n",
+        "    p = input(\"Ingresa palabra (fin para terminar): \")\n",
+        "    if p.lower() == \"fin\":\n",
+        "        break\n",
+        "    palabras.append(p)\n",
+        "\n",
+        "print(\"Cantidad:\", len(palabras))\n",
+        "print(\"Invertido:\", palabras[::-1])\n",
+        "print(\"Normal\", palabras)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wk-JMFU6Xoos",
+        "outputId": "e4028b0c-ab93-4314-f271-96b7871a08b5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ingresa palabra (fin para terminar): hola\n",
+            "Ingresa palabra (fin para terminar): como estas\n",
+            "Ingresa palabra (fin para terminar): soy juan\n",
+            "Ingresa palabra (fin para terminar):  fin\n",
+            "Ingresa palabra (fin para terminar): fin\n",
+            "Cantidad: 4\n",
+            "Invertido: [' fin', 'soy juan', 'como estas', 'hola']\n",
+            "Normal ['hola', 'como estas', 'soy juan', ' fin']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Stacks - Pilas"
+      ],
+      "metadata": {
+        "id": "etm2F3HlZTG7"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "stack = []\n",
+        "stack.append(10)\n",
+        "stack.append(20)\n",
+        "stack.append(30)\n",
+        "stack.append(40)\n",
+        "stack.append(50)\n",
+        "print(stack)\n",
+        "print(\"pop\", stack.pop()) #50\n",
+        "print( \"top\", stack[-1]) #40\n",
+        "print(\"pop\", stack.pop())\n",
+        "print(stack)\n",
+        "print(\"reverse\", stack[::-1])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "n8sD2obEWaBv",
+        "outputId": "5f2b39b7-8b51-435d-e739-4df906af49b7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[10, 20, 30, 40, 50]\n",
+            "pop 50\n",
+            "top 40\n",
+            "pop 40\n",
+            "[10, 20, 30]\n",
+            "reverse [10, 20, 30]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Pila de parentesis"
+      ],
+      "metadata": {
+        "id": "isH1-ne4a8Y7"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def balanceados(expresion):\n",
+        "    stack = []\n",
+        "    for c in expresion:\n",
+        "        if c == \"(\":\n",
+        "            stack.append(c)\n",
+        "        elif c == \")\":\n",
+        "            if not stack:\n",
+        "                return False\n",
+        "            stack.pop()\n",
+        "    return not stack\n",
+        "\n",
+        "print(balanceados(\"(3+2)*(5-1)\"))  # True\n",
+        "print(balanceados(\"((2+3) + (90x4))\"))       # False\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wfuRI8bta_Cu",
+        "outputId": "2c747d02-1799-4a6c-c8b2-84f9ca58a829"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Queu - Cola\n",
+        "\n",
+        "FIFO - First In First Out\n",
+        "\n"
+      ],
+      "metadata": {
+        "id": "3RvlPbdvb8DI"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from collections import deque\n",
+        "queue = deque()\n",
+        "queue.append(1)\n",
+        "queue.append(2)\n",
+        "queue.append(3)\n",
+        "queue.append(4)\n",
+        "queue.append(5)\n",
+        "print(queue)\n",
+        "print(\"pop\", queue.popleft()) #1\n",
+        "print(queue)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "82mmDj1_b_7y",
+        "outputId": "59fa8b46-6553-41b6-9a06-4df5343aa6f3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "deque([1, 2, 3, 4, 5])\n",
+            "pop 1\n",
+            "deque([2, 3, 4, 5])\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Cola Circular\n",
+        "\n",
+        "Simula un sistema de turnos de una taquilla con 5 lugares disponibles.\n",
+        "Cuando el último se ocupa, el siguiente turno vuelve a iniciar en la primera posición (circular).\n",
+        "\n",
+        "Ejemplo de flujo:\n",
+        "\n",
+        "Llega cliente A → lugar 0\n",
+        "\n",
+        "Llega cliente B → lugar 1\n",
+        "\n",
+        "Llega cliente C → lugar 2\n",
+        "\n",
+        "Llega cliente D → lugar 3\n",
+        "\n",
+        "Llega cliente E → lugar 4\n",
+        "\n",
+        "Llega cliente F → regresa a lugar 0 (si ya está libre)\n"
+      ],
+      "metadata": {
+        "id": "EMh3OPiud1mu"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class ColaCircular:\n",
+        "    def __init__(self, capacidad):\n",
+        "        self.capacidad = capacidad\n",
+        "        self.cola = [None] * capacidad\n",
+        "        self.front = -1\n",
+        "        self.rear = -1\n",
+        "\n",
+        "    def esta_vacia(self):\n",
+        "        return self.front == -1\n",
+        "\n",
+        "    def esta_llena(self):\n",
+        "        return (self.rear + 1) % self.capacidad == self.front\n",
+        "\n",
+        "    def encolar(self, dato):\n",
+        "        if self.esta_llena():\n",
+        "            print(\"⚠️ Cola llena, no se puede agregar:\", dato)\n",
+        "            return\n",
+        "        if self.esta_vacia():\n",
+        "            self.front = 0\n",
+        "        self.rear = (self.rear + 1) % self.capacidad\n",
+        "        self.cola[self.rear] = dato\n",
+        "        print(f\"✅ {dato} tomó el lugar {self.rear}\")\n",
+        "\n",
+        "    def desencolar(self):\n",
+        "        if self.esta_vacia():\n",
+        "            print(\"⚠️ Cola vacía\")\n",
+        "            return None\n",
+        "        dato = self.cola[self.front]\n",
+        "        if self.front == self.rear:  # único elemento\n",
+        "            self.front = self.rear = -1\n",
+        "        else:\n",
+        "            self.front = (self.front + 1) % self.capacidad\n",
+        "        print(f\"👋 Atendido: {dato}\")\n",
+        "        return dato\n",
+        "\n",
+        "# Simulación\n",
+        "cola = ColaCircular(5)\n",
+        "cola.encolar(\"Ana\")\n",
+        "cola.encolar(\"Luis\")\n",
+        "cola.encolar(\"Pedro\")\n",
+        "cola.encolar(\"Maria\")\n",
+        "cola.encolar(\"Jose\")\n",
+        "cola.encolar(\"Extra\")   # No cabe\n",
+        "\n",
+        "cola.desencolar()\n",
+        "cola.desencolar()\n",
+        "cola.encolar(\"Carla\")   # Reutiliza espacio circular\n",
+        "cola.encolar(\"Extra\")"
+      ],
+      "metadata": {
+        "id": "K1beKIiFd3ZT",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "f8e2a099-f7d3-4edd-b28a-3d741ef5670c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "✅ Ana tomó el lugar 0\n",
+            "✅ Luis tomó el lugar 1\n",
+            "✅ Pedro tomó el lugar 2\n",
+            "✅ Maria tomó el lugar 3\n",
+            "✅ Jose tomó el lugar 4\n",
+            "⚠️ Cola llena, no se puede agregar: Extra\n",
+            "👋 Atendido: Ana\n",
+            "👋 Atendido: Luis\n",
+            "✅ Carla tomó el lugar 0\n",
+            "✅ Extra tomó el lugar 1\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wrToap46ahbv",
+        "outputId": "bd9db818-7ede-4b45-97e2-91cba10c73ff"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Lista de 100,000 elementos\n",
+            "Objetivo: 778525\n",
+            "Búsqueda lineal: 0.007032 segundos\n",
+            "Búsqueda binaria: 0.000090 segundos\n",
+            "Diferencia: 78 veces más rápido\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
