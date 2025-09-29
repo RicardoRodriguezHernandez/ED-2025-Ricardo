@@ -1,0 +1,45 @@
+palabras = []
+print("=====Lista=====")
+while True:
+    p = input("Ingresa un nombre: (fin para terminar): ")
+    if p.lower() == "fin":
+        break
+    palabras.append(p)
+
+print("Lista:", palabras)
+
+
+stack = []
+print("=====Pila=====")
+stack.append("Gogle.com")
+stack.append("Wikipedia.org")
+stack.append("openai.com")
+print(stack)
+print("top", stack[-1])   
+
+
+import time
+from collections import deque 
+queue = deque()
+print("=====Cola=====")
+queue.append("doc1.pdf")
+queue.append("tarea,docx",)
+queue.append("presentacion.pptx")
+print(queue)
+print("pop", queue.popleft()) 
+queue.append("informe,pdf")
+print(queue)
+
+
+#print("Ejercicio 4.- Respuesta: Yo usaria la binaria ya que esta a demostrado ser mas eficiente que los metodos bubble sort y merge sort por su facil " \
+#      "por su facil aplicacion, aun que algo mas compliacdo que la lienal se puede usar de una manera mas facil que la recursivo o el inrativo")
+
+#print("Ejercicio 5.- Respeusta: por la diferencia de tiempo que esto pueden llegar utilizar, ya que cada conplejidad tiene que hacer su propio proceso" \
+#      "ordenamiento, cosa la cual al O(n**2) le llega a costar mas, cosa que no le pasa al O(n) ya que este es algo mas simple y no requiere tanto " \
+#      "tanto tiempo para su proceso")
+
+#print("Ejercicio 6.-Trabajaria otra vez con la binaria, simplemente por su facil uso y su capacidad de trabajar hasta con una lista de 100,000 elementos")
+
+#print("Ejercicio 7.-Su maximo antes que se empieze a volver muy lento, es cuando la entrada de n es de 35")
+
+#print("Ejercicio 8.-")
