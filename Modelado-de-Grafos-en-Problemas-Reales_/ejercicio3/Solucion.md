@@ -18,12 +18,12 @@ Cada arista representa las relaciones de mis amigos
 - Fabio — Ana
 
 ## Grados
-- Ana: 3
-- Bruno: 3
-- Carla: 3
-- Diego: 3
-- Elena: 2
-- Fabio: 2
+- Ana: grado 3 (Bruno, Carla, Fabio)
+- Bruno: grado 3 (Ana, Carla, Diego)
+- Carla: grado 3 (Ana, Bruno, Diego)
+- Diego: grado 2 (Carla, Bruno, Elena)
+- Elena: grado 2 (Diego, Fabio)
+- Fabio: grado 2 (Elena, Ana)
 
 ## Conexidad
 El grafo es **conexo**.
