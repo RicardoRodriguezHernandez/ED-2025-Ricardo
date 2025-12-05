@@ -34,5 +34,5 @@ Sí:
 - Ciclos largos pasando por Fabio y Elena
 
 ## Pregunta interesante
-¿Quién es la persona más influyente del grupo?  
-→ **Ana, Bruno y Carla** (todos con grado 3)
+¿Que persona(vertice) tiene una relacion mas extensa(Camino)?  
+→ **Ana**(Tiene una longitud del camino: 4)
