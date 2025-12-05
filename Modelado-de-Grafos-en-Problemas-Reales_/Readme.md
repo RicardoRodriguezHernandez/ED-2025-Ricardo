@@ -16,13 +16,13 @@ Modela una red de vuelos nacionales e internacionales con un grafo **dirigido y 
 | Houston  | Miami    | $1800  |
 | Miami    | México   | $4000  |
 
-a) Dibuja el grafo (con flechas y precios)
+- Dibuja el grafo (con flechas y precios)
 ## Preguntas a resolver
-- b) ¿Es dirigido o no dirigido? ¿Es ponderado?
-- c) Calcula el grado de entrada y salida de cada ciudad
-- d) ¿Cuál ciudad tiene más vuelos salientes?
-- e) Encuentra la ruta más barata de México a Miami
-- f) ¿Existe algún ciclo? Si sí, descríbelo
+- ¿Es dirigido o no dirigido? ¿Es ponderado?
+- Calcula el grado de entrada y salida de cada ciudad
+- ¿Cuál ciudad tiene más vuelos salientes?
+- Encuentra la ruta más barata de México a Miami
+- ¿Existe algún ciclo? Si sí, descríbelo
 
 ### Ejercicio 2: Red de Computadoras
 Representa la estructura de una red de oficina con un grafo **no dirigido**, verificando su conexidad.
@@ -32,13 +32,13 @@ Representa la estructura de una red de oficina con un grafo **no dirigido**, ver
 - Switch2 conecta con: PC3, PC4, Impresora2
 - El Servidor conecta con: Router (ya mencionado)
 
-a) Dibuja el grafo de la red
+- Dibuja el grafo de la red
 ## Preguntas a resolver
-- b) ¿Cuántos vértices y aristas tiene?
-- c) ¿Es conexo? ¿Qué significa esto para la red?
-- d) ¿Es un árbol? Justifica
-- e) Si se desconecta el Router, ¿cuántas componentes conexas quedan?
-- f) ¿Cuál es el dispositivo más crítico de la red? (si falla, más dispositivos quedan aislados)
+- ¿Cuántos vértices y aristas tiene?
+- ¿Es conexo? ¿Qué significa esto para la red?
+- ¿Es un árbol? Justifica
+- Si se desconecta el Router, ¿cuántas componentes conexas quedan?
+- ¿Cuál es el dispositivo más crítico de la red? (si falla, más dispositivos quedan aislados)
 
 ### Ejercicio 3: Grafo Personal
 Modela una situación real de tu elección como grafo.
@@ -51,12 +51,12 @@ Requisitos mínimos:
 - Debe representar algo real de tu vida o entorno
 
 ## Incluye 
-- a) Descripción del problema que estás modelando
-- b) Qué representa cada vértice
-- c) Qué representa cada arista
-- d) Diagrama del grafo
-- e) Análisis: grados, conexidad, ciclos si existen
-- f) Una pregunta interesante que puedas responder con tu grafo
+- Descripción del problema que estás modelando
+- Qué representa cada vértice
+- Qué representa cada arista
+- Diagrama del grafo
+- Análisis: grados, conexidad, ciclos si existen
+- Una pregunta interesante que puedas responder con tu grafo
 
 
 
