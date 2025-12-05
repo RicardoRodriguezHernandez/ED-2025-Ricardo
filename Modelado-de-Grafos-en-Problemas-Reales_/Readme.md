@@ -41,6 +41,22 @@ a) Dibuja el grafo de la red
 - f) ¿Cuál es el dispositivo más crítico de la red? (si falla, más dispositivos quedan aislados)
 
 ### Ejercicio 3: Grafo Personal
-Un modelo real usando un grafo de amistades y sus conexiones.
+Modela una situación real de tu elección como grafo.
+Puede ser: tu grupo de amigos, materias y prerrequisitos,
+rutas de transporte que usas, etc.
+
+Requisitos mínimos:
+- Al menos 6 vértices
+- Al menos 7 aristas
+- Debe representar algo real de tu vida o entorno
+
+## Incluye 
+- a) Descripción del problema que estás modelando
+- b) Qué representa cada vértice
+- c) Qué representa cada arista
+- d) Diagrama del grafo
+- e) Análisis: grados, conexidad, ciclos si existen
+- f) Una pregunta interesante que puedas responder con tu grafo
+
 
 
