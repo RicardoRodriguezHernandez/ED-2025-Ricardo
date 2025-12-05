@@ -27,7 +27,18 @@ a) Dibuja el grafo (con flechas y precios)
 ### Ejercicio 2: Red de Computadoras
 Representa la estructura de una red de oficina con un grafo **no dirigido**, verificando su conexidad.
 
+- El Router principal conecta con: Servidor, Switch1, Switch2
+- Switch1 conecta con: PC1, PC2, Impresora1
+- Switch2 conecta con: PC3, PC4, Impresora2
+- El Servidor conecta con: Router (ya mencionado)
+
+a) Dibuja el grafo de la red
 ## Preguntas a resolver
+- b) ¿Cuántos vértices y aristas tiene?
+- c) ¿Es conexo? ¿Qué significa esto para la red?
+- d) ¿Es un árbol? Justifica
+- e) Si se desconecta el Router, ¿cuántas componentes conexas quedan?
+- f) ¿Cuál es el dispositivo más crítico de la red? (si falla, más dispositivos quedan aislados)
 
 ### Ejercicio 3: Grafo Personal
 Un modelo real usando un grafo de amistades y sus conexiones.
