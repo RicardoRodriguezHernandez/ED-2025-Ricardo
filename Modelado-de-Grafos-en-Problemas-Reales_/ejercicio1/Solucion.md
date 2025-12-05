@@ -33,5 +33,3 @@ Sí:
 - México → Cancún → Miami → México  
 - México → Monterrey → Houston → Miami → México
 
-## Diagrama
-![Diagrama](diagrama.png)
