@@ -8,7 +8,7 @@ Este repositorio contiene tres ejercicios donde se modelan diferentes situacione
 Modela una red de vuelos nacionales e internacionales con un grafo **dirigido y ponderado**.
 
 a) Dibuja el grafo (con flechas y precios)
-##Preguntas a resolver##
+## Preguntas a resolver
 b) ¿Es dirigido o no dirigido? ¿Es ponderado?
 c) Calcula el grado de entrada y salida de cada ciudad
 d) ¿Cuál ciudad tiene más vuelos salientes?
