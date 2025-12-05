@@ -26,7 +26,8 @@ Cada arista representa las relaciones de mis amigos
 - Fabio: grado 2 (Elena, Ana)
   
 Cumple con la propiedad de lema del presionado de manos 
-Calculo = 3 + 3 + 3 + 3 + 2 + 2 = 16 = 2 x 8 aristas 
+
+**Calculo** = 3 + 3 + 3 + 3 + 2 + 2 = 16 = 2 x 8 aristas 
 
 ## Conexidad
 El grafo es **conexo**.
