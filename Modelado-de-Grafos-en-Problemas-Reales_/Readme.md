@@ -1,11 +1,8 @@
-# Tarea 1.2: Modelado de Grafos
+# Tarea 1.2: Modelado de Grafos en Problemas Reales
 
 ## Información
-- **Nombre:** [Ricardo Rodrifuez Hernandez]
-- **Fecha:** [05 de diciembre del 2025]
-- 
-# Modelado de Grafos en Problemas Reales
-
+- **Nombre:** Ricardo Rodrifuez Hernandez
+- **Fecha:** 05 de diciembre del 2025
 Este repositorio contiene tres ejercicios donde se modelan diferentes situaciones reales usando grafos.
 
 ## Contenido
