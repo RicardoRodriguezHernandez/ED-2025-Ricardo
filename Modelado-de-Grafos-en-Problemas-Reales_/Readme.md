@@ -3,6 +3,7 @@
 ## Información
 - **Nombre:** Ricardo Rodrifuez Hernandez
 - **Fecha:** 05 de diciembre del 2025
+  
 Este repositorio contiene tres ejercicios donde se modelan diferentes situaciones reales usando grafos.
 
 ## Contenido
