@@ -4,7 +4,7 @@
 Este grafo modela mi grupo de amigos y sus conexiones de amistad.
 
 ## Vértices
-Ana, Bruno, Carla, Diego, Elena, Fabio
+Cada vertice representa a mis amigos, en este caso: Ana, Bruno, Carla, Diego, Elena, Fabio
 
 ## Aristas (amistades)
 - Ana — Bruno
