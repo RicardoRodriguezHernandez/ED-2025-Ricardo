@@ -21,9 +21,12 @@ Cada arista representa las relaciones de mis amigos
 - Ana: grado 3 (Bruno, Carla, Fabio)
 - Bruno: grado 3 (Ana, Carla, Diego)
 - Carla: grado 3 (Ana, Bruno, Diego)
-- Diego: grado 2 (Carla, Bruno, Elena)
+- Diego: grado 3 (Carla, Bruno, Elena)
 - Elena: grado 2 (Diego, Fabio)
 - Fabio: grado 2 (Elena, Ana)
+  
+Cumple con la propiedad de lema del presionado de manos 
+Calculo = 3 + 3 + 3 + 3 + 2 + 2 = 16 = 2 x 8 aristas 
 
 ## Conexidad
 El grafo es **conexo**.
